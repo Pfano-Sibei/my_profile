@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pfano Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Pfano</span>
+            </div>
+            <div class="nav-tagline">Passion for tech, eyes on the future.</div>
+
+            <i class="fa-solid fa-bars" onclick="hamburg()"></i>
+        </div>
+
+        <div class="dropdown">
+            <div class="links">
+
+                <a href="#About Me">About Me</a>
+                <a href="#skills">Skills</a>
+                
+                <a href="#certificates">Certificates</a>
+                <a href="#contact-form">Contact Me</a>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section>
+        <div class="main-container">
+            <div class="image">
+                <img src="20230314_105921.jpg" alt="Profile Image" />
+            </div>
+
+            <div class="content">
+                <h1>Hey I'm <span> Sibei Pfano</span></h1>
+                <div class="typewriter">I'm a <span class="typing"></span></div>
+
+                <p id="About Me">
+                    I am a final-year IT student with a passion for technology and a strong determination to grow and
+                    excel in the field. While I may not consider myself an expert yet, I am always eager to learn and
+                    improve my skills. My journey so far has led me to complete an Introduction to Data Science with
+                    Cisco and an Introduction to Cybersecurity through the Cisco Academy. These experiences have fueled
+                    my ambition to become a data scientist, and I am excited to continue developing my knowledge and
+                    expertise. As a dedicated learner, I embrace challenges and strive to build a future in data science
+                    and cybersecurity.
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="skills-container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fa-brands fa-code"></i> C#</div>
+                <div class="skill-card"><i class="fa-brands fa-html5"></i> HTML & CSS</div>
+                <div class="skill-card"><i class="fa-brands fa-js"></i> JavaScript</div>
+                <div class="skill-card"><i class="fa-solid fa-mobile"></i> Flutter & Dart</div>
+                <div class="skill-card"><i class="fa-solid fa-database"></i> ASP.NET (C# Backend)</div>
+                <div class="skill-card"><i class="fa-solid fa-paint-brush"></i> UI/UX Design</div>
+            </div>
+
+            <h2>Additional Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fa-solid fa-lightbulb"></i> Problem-Solving</div>
+                <div class="skill-card"><i class="fa-solid fa-code-branch"></i> Debugging & Optimization
+                </div>
+                <div class="skill-card"><i class="fa-solid fa-laptop-code"></i> Full-Stack Development</div>
+                <div class="skill-card"><i class="fa-brands fa-git-alt"></i> Version Control (Git & GitHub)
+                </div>
+            </div>
+        </div>
+    </section>
+   <section id="certificates" class="certificates-section">
+  <h2>Certificates</h2>
+  <div class="certificate-grid">
+    <div class="certificate-item">
+      <img src="Screenshot 2025-06-19 160205.png" alt="Data Science Certificate" onclick="openModal(this.src)">
+      <p>Cisco: Introduction to Data Science</p>
+    </div>
+    <div class="certificate-item">
+      <img src="Screenshot 2025-06-19 155627.png" alt="Cybersecurity Certificate" onclick="openModal(this.src)">
+      <p>Cybersecurity Certificate</p>
+    </div>
+    <div class="certificate-item">
+      <img src="Screenshot 2025-06-19 160514.png" alt="IT Essential Certificate" onclick="openModal(this.src)">
+      <p>IT Essential</p>
+    </div>
+  </div>
+</section>
+>
+
+  </div>
+</section>
+
+
+    <form id="contact-form" action="https://formsubmit.co/ajax/sibeipfano82@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_subject" value="New submission!" />
+
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+
+        <div id="success-message" style="display: none; color: green; font-weight: bold; margin-top: 10px;">
+            ✅ Message sent successfully!
+        </div>
+        <div id="error-message" style="display: none; color: red; font-weight: bold; margin-top: 10px;">
+            ❌ Something went wrong. Please try again.
+        </div>
+        
+    </form>
+
+
+
+
+
+
+
+    <section class="footer-extras">
+        <div class="social-links">
+            <a href="https://github.com/Pfano-Sibei"><i class="fa-brands fa-github"></i></a>
+            <a href="https://web.facebook.com/baebee.tee.188/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/pfano-sibei-3792a426b"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="btn">
+            <a href="https://drive.google.com/file/d/1YXQDL4fxZb98Q2cCrPOfgMWGbms_O6hp/view?usp=drive_link" download
+                target="_blank" rel="noopener">
+                <button>Download CV</button>
+            </a>
+        </div>
+
+    </section>
+    <div class="contact-us">
+
+
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+
+        function closeMenu() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+
+
+    </script>
+    <script>
+
+
+        const form = document.getElementById("contact-form");
+        const successMessage = document.getElementById("success-message");
+        const errorMessage = document.getElementById("error-message");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    Accept: "application/json"
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        successMessage.textContent = '✅ Message sent successfully!';
+                        successMessage.style.display = 'block';
+                        errorMessage.style.display = 'none'; // hide error if previously shown
+                        form.reset();
+                    } else {
+                        throw new Error('Form submission failed');
+                    }
+                })
+                .catch(error => {
+                    successMessage.style.display = 'none';
+                    errorMessage.textContent = '❌ Something went wrong. Please try again.';
+                    errorMessage.style.display = 'block';
+                });
+        });
+
+
+    </script>
+   <div id="imageModal" class="modal" onclick="closeModal()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center;">
+  <span class="close" onclick="closeModal()" style="position:absolute; top:20px; right:40px; font-size:40px; color:#fff; cursor:pointer;">&times;</span>
+  <img class="modal-content" id="modalImage" style="max-width:90%; max-height:80%;">
+</div>
+
+
+<script>
+  function openModal(src) {
+    document.getElementById("modalImage").src = src;
+    document.getElementById("imageModal").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
+
+
+
+    <div class="heart-container">
+        <div class="heart pink heart1"></div>
+        <div class="heart white heart2"></div>
+        <div class="heart pink heart3"></div>
+        <div class="heart white heart4"></div>
+        <div class="heart pink heart5"></div>
+        <div class="heart pink heart6"></div>
+        <div class="heart pink heart7"></div>
+        <div class="heart pink heart8"></div>
+    </div>
+
+</body>
+
+</html>
